@@ -1,0 +1,38 @@
+@import './base/reset';
+@import 'normalize.css';
+@import './utils/vars.scss';
+@import './utils/helpers';
+@import './utils/mixins';
+
+@font-face {
+  font-family: 'Poppins-400';
+  src: url(./assets/fonts/Poppins-Regular.woff) format('woff'),
+    url(./assets/fonts/Poppins-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins-500';
+  src: url(./assets/fonts/Poppins-Medium.woff) format('woff'),
+    url(./assets/fonts/Poppins-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins-600';
+  src: url(./assets/fonts/Poppins-SemiBold.woff) format('woff'),
+    url(./assets/fonts/Poppins-SemiBold.woff2) format('woff2');
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Poppins-Medium, sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.01em;
+  color: $primary-text-color;
+  background-color: $primary-bg-color;
+}

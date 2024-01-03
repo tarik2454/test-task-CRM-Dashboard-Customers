@@ -1,0 +1,29 @@
+@mixin bordered($color) {
+  border: 1px solid $color;
+}
+
+@mixin centeredFlex($type: flex) {
+  display: $type;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin breakpoint($bp) {
+  @media screen and (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin media($size) {
+  @media screen and (min-width: #{$size}px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}

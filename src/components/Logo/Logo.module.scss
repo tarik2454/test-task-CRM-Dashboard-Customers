@@ -1,0 +1,35 @@
+@import '@/styles/utils/vars';
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__inner {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo__content {
+  display: flex;
+  gap: 0.4rem;
+  height: fit-content;
+}
+
+.logo__title {
+  color: $title-color;
+  font-family: Poppins-600;
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.logo__version {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0.6rem;
+  color: #838383;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+}

@@ -1,0 +1,9 @@
+@import '../styles/utils/_vars.scss';
+
+.page {
+  display: flex;
+}
+
+.main {
+  padding: 4.1rem 9.5rem 25.8rem $sidebar-width;
+}
