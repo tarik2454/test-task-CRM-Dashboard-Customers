@@ -1,0 +1,28 @@
+@import '../../styles/all-styles';
+
+.section__title {
+  margin-bottom: 0.7rem;
+  font-family: Poppins-600, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: $title-color;
+  letter-spacing: -0.01em;
+}
+
+.section__subtitle {
+  color: #16c098;
+  font-family: Poppins-400, sans-serif;
+  font-weight: 400;
+}
+
+.customers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.customers__header {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,19 @@
+@import '../../styles/all-styles';
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.user__name {
+  letter-spacing: 0.01em;
+}
+
+.user__position {
+  font-family: Poppins-500, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #757575;
+}

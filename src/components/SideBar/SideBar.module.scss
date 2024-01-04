@@ -1,8 +1,22 @@
+@import '@/styles/all-styles';
+
 .sidebar {
-  height: 100vh;
-  padding: 3.6rem 2.8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  padding: 3.7rem 2.8rem 7.6rem 2.8rem;
+  background-color: $secondary-bg-color;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
-.sidebar__header {
-  margin-bottom: 6.5rem;
+.sidebar__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5.4rem;
 }

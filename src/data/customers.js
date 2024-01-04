@@ -1,0 +1,68 @@
+const customers = [
+  {
+    name: 'Jane Cooper',
+    company: 'Microsoft',
+    phone: '(225) 555-0118',
+    email: 'jane@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    name: 'Floyd Miles',
+    company: 'Yahoo',
+    phone: '(205) 555-0100',
+    email: 'floyd@yahoo.com',
+    country: 'Kiribati',
+    status: 'Inactive',
+  },
+  {
+    name: 'Ronald Richards',
+    company: 'Adobe',
+    phone: '(302) 555-0107',
+    email: 'ronald@adobe.com',
+    country: 'Israel',
+    status: 'Inactive',
+  },
+  {
+    name: 'Jane Cooper',
+    company: 'Microsoft',
+    phone: '(225) 555-0118',
+    email: 'jane@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    name: 'Jane Cooper',
+    company: 'Microsoft',
+    phone: '(225) 555-0118',
+    email: 'jane@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    name: 'Jane Cooper',
+    company: 'Microsoft',
+    phone: '(225) 555-0118',
+    email: 'jane@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    name: 'Jane Cooper',
+    company: 'Microsoft',
+    phone: '(225) 555-0118',
+    email: 'jane@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+  {
+    name: 'Jane Cooper',
+    company: 'Microsoft',
+    phone: '(225) 555-0118',
+    email: 'jane@microsoft.com',
+    country: 'United States',
+    status: 'Active',
+  },
+];
+
+export default customers;
