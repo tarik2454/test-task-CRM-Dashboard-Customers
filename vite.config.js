@@ -17,5 +17,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  // base: '/test-task-CRM-Dashboard-Customers/',
+  base: '/test-task-CRM-Dashboard-Customers/',
 });
