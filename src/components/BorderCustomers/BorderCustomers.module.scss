@@ -2,8 +2,14 @@
 
 .table {
   width: 100%;
+  max-width: 96.8rem;
   margin-bottom: 3rem;
   border-collapse: collapse;
+  font-size: 1.1rem;
+
+  @include media(1440) {
+    font-size: inherit;
+  }
 }
 
 .table__line {
@@ -20,18 +26,22 @@
 }
 
 .table__header {
-  padding: 0 1.4rem 1.4rem 0;
+  padding: 0 1.2rem 1.2rem 0;
   text-align: left;
   color: $secondary-text-color;
 
   &:last-child {
     text-align: center;
   }
+
+  @include media(1440) {
+    padding: 0 1.4rem 1.4rem 0;
+  }
 }
 
 .table__cell {
   border-bottom: 1px solid #eee;
-  padding: 2.4rem 0;
+  padding: 1.8rem 0;
   text-align: left;
 
   &:first-child {
@@ -49,8 +59,8 @@
     &::after {
       display: block;
       content: '';
-      width: 8rem;
-      height: 2.9rem;
+      width: 6rem;
+      height: 2.5rem;
       border: $active-border;
       border-radius: 0.4rem;
       background-color: $active-bg;
@@ -61,6 +71,11 @@
       z-index: -1;
 
       transform: translate(-50%, -50%);
+
+      @include media(1440) {
+        width: 8rem;
+        height: 2.9rem;
+      }
     }
   }
 
@@ -71,8 +86,8 @@
     &::after {
       display: block;
       content: '';
-      width: 8rem;
-      height: 2.9rem;
+      width: 6rem;
+      height: 2.5rem;
       border: $inactive-border;
       border-radius: 0.4rem;
       background-color: $inactive-bg;
@@ -83,6 +98,15 @@
       z-index: -1;
 
       transform: translate(-50%, -50%);
+
+      @include media(1440) {
+        width: 8rem;
+        height: 2.9rem;
+      }
     }
+  }
+
+  @include media(1440) {
+    padding: 2.4rem 0;
   }
 }
