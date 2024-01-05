@@ -14,7 +14,7 @@ export default function App() {
   return (
     <>
       <Routes>
-        <Route path="/test-task-CRM-Dashboard-Customers/" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Customers />} />
           <Route path="customers" element={<Customers />} />
           <Route path="dashboard" element={<Dashboard />} />

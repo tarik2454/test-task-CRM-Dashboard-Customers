@@ -4,7 +4,7 @@ import App from './App.jsx';
 import './styles/main.scss';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/test-task-CRM-Dashboard-Customers/">
     <App />
   </BrowserRouter>
 );
