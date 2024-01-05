@@ -1,9 +1,11 @@
+import customers from '../../data/customers';
+
 import styles from '../BorderCustomers/BorderCustomers.module.scss';
 
 export default function BorderCustomers() {
   return (
     <table className={styles.table}>
-      <thead className={styles.table__head}>
+      <thead className={styles.table__line}>
         <tr>
           <th className={styles.table__header}>Customer Name</th>
           <th className={styles.table__header}>Company</th>
@@ -14,30 +16,22 @@ export default function BorderCustomers() {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td className={styles.table__cell}>Иван</td>
-          <td className={styles.table__cell}>25</td>
-          <td className={styles.table__cell}>Москва</td>
-          <td className={styles.table__cell}>Иван</td>
-          <td className={styles.table__cell}>25</td>
-          <td className={styles.table__cell}>Москва</td>
-        </tr>
-        <tr>
-          <td className={styles.table__cell}>Мария</td>
-          <td className={styles.table__cell}>30</td>
-          <td className={styles.table__cell}>Санкт-Петербург</td>
-          <td className={styles.table__cell}>Иван</td>
-          <td className={styles.table__cell}>25</td>
-          <td className={styles.table__cell}>Москва</td>
-        </tr>
-        <tr>
-          <td className={styles.table__cell}>Алексей</td>
-          <td className={styles.table__cell}>22</td>
-          <td className={styles.table__cell}>Новосибирск</td>
-          <td className={styles.table__cell}>Иван</td>
-          <td className={styles.table__cell}>25</td>
-          <td className={styles.table__cell}>Москва</td>
-        </tr>
+        {customers.map((item, index) => (
+          <tr key={index}>
+            <td className={styles.table__cell}>{item.name}</td>
+            <td className={styles.table__cell}>{item.company}</td>
+            <td className={styles.table__cell}>{item.phone}</td>
+            <td className={styles.table__cell}>{item.email}</td>
+            <td className={styles.table__cell}>{item.country}</td>
+            <td
+              className={`${styles.table__cell} ${
+                item.status === 'Active' ? styles.active : styles.inactive
+              }`}
+            >
+              {item.status}
+            </td>
+          </tr>
+        ))}
       </tbody>
     </table>
   );

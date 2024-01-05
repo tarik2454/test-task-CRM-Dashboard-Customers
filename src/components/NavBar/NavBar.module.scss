@@ -7,21 +7,6 @@
   min-width: 25rem;
 }
 
-.nav__item {
-  padding: 1.1rem 0.8rem 1.1rem 1.1rem;
-  border-radius: 0.8rem;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-
-    .nav__link {
-      color: #fff;
-    }
-  }
-}
-
 .nav__content {
   display: flex;
   align-items: center;
@@ -32,6 +17,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Poppins-500;
+  font-family: 'Poppins', sans-serif;
   color: #9197b3;
+
+  padding: 1.1rem 0.8rem 1.1rem 1.1rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $accent-color;
+  }
 }

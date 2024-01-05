@@ -1,5 +1,13 @@
 @import '../styles/all-styles';
 
 .main {
-  padding: 4.1rem 9.5rem 25.8rem 37.7rem;
+  padding: 4.1rem 9.5rem 25.8rem 9.5rem;
+
+  @include media(768) {
+    padding-left: 9.5rem;
+  }
+
+  @include media(1440) {
+    padding: 4.1rem 9.5rem 25.8rem 37.7rem;
+  }
 }

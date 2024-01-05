@@ -1,6 +1,6 @@
 const navLinks = [
   {
-    path: '/',
+    path: '/dashboard',
     label: 'Dashboard',
     icon: 'dashboard',
   },

@@ -11,8 +11,12 @@
 
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
   z-index: 1;
+
+  @include media(1440) {
+    left: 0;
+  }
 }
 
 .sidebar__content {

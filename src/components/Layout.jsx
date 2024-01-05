@@ -14,8 +14,9 @@ export default function Layout() {
     <div className={styles.page}>
       <main className={styles.main}>
         <SideBar />
-        <UserWelcome />
+
         <Container>
+          <UserWelcome />
           <Section>
             <Suspense fallback={<Loader />}>
               <Outlet />
