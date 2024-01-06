@@ -14,6 +14,7 @@ export default function Customers() {
         </div>
         <SearchForm />
       </div>
+
       <BorderCustomers />
       <Pagination />
     </>

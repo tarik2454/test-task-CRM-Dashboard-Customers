@@ -37,6 +37,7 @@ export default function SideBar() {
           <use href={spriteSvg + '#burger-menu'} />
         </svg>
       </button>
+
       <div className={styles.sidebar__content}>
         <Logo />
         <NavBar />

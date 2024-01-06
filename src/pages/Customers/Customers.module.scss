@@ -17,12 +17,22 @@
 
 .customers {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 4rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.2rem;
+
+  @include media(768) {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
 }
 
 .customers__header {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
+
+  @include media(768) {
+    margin-bottom: 0;
+  }
 }

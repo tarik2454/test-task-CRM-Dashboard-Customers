@@ -1,11 +1,18 @@
 @import '@/styles/all-styles';
 
 .table {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 96.8rem;
   margin-bottom: 3rem;
   border-collapse: collapse;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+
+  @include media(768) {
+    display: table;
+    font-size: 1.1rem;
+  }
 
   @include media(1440) {
     font-size: inherit;
@@ -14,7 +21,7 @@
 
 .table__line {
   &::after {
-    display: block;
+    display: none;
     content: '';
     width: 100%;
     height: 1px;
@@ -22,6 +29,10 @@
 
     position: absolute;
     left: 0;
+
+    @include media(768) {
+      display: block;
+    }
   }
 }
 
@@ -49,7 +60,9 @@
   }
 
   &:last-child {
-    text-align: center;
+    @include media(768) {
+      text-align: center;
+    }
   }
 
   &.active {
@@ -57,7 +70,7 @@
     position: relative;
 
     &::after {
-      display: block;
+      display: none;
       content: '';
       width: 6rem;
       height: 2.5rem;
@@ -72,6 +85,10 @@
 
       transform: translate(-50%, -50%);
 
+      @include media(768) {
+        display: block;
+      }
+
       @include media(1440) {
         width: 8rem;
         height: 2.9rem;
@@ -84,7 +101,7 @@
     position: relative;
 
     &::after {
-      display: block;
+      display: none;
       content: '';
       width: 6rem;
       height: 2.5rem;
@@ -99,6 +116,10 @@
 
       transform: translate(-50%, -50%);
 
+      @include media(768) {
+        display: block;
+      }
+
       @include media(1440) {
         width: 8rem;
         height: 2.9rem;
@@ -108,5 +129,43 @@
 
   @include media(1440) {
     padding: 2.4rem 0;
+  }
+}
+
+.table__itemMobile {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.table__lineMobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.table__headerMobile {
+  color: $secondary-text-color;
+
+  &:last-child {
+    text-align: left;
+  }
+}
+
+.table__contentMobile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.table__cellMobile {
+  border: none;
+
+  &.active {
+    color: $active-color;
+  }
+
+  &.inactive {
+    color: $inactive-color;
   }
 }

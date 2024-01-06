@@ -2,7 +2,16 @@
 
 .pagination {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include media(768) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
 }
 
 .pagination__text {

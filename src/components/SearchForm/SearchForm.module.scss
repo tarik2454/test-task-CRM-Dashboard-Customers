@@ -1,9 +1,11 @@
 @import '@/styles/all-styles';
 
 .form {
-  width: 100%;
-  max-width: 21.6rem;
   position: relative;
+
+  @include media(768) {
+    max-width: 21.6rem;
+  }
 }
 
 .form__button {
@@ -22,6 +24,7 @@
 }
 
 .form__input {
+  width: 100%;
   padding: 1rem 1rem 1rem 4rem;
   border-radius: 1rem;
   border: none;
@@ -35,5 +38,9 @@
   &:focus,
   &:active {
     outline: 1px solid #b5b7c0;
+  }
+
+  @include media(768) {
+    width: inherit;
   }
 }

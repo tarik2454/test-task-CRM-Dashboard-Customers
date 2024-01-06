@@ -22,9 +22,11 @@ export default function NavBar() {
                 {item.label}
               </div>
 
-              <svg width="16" height="16" viewBox="0 0 16 16" alt="Right">
-                <use href={spriteSvg + '#chevron-right'} />
-              </svg>
+              {index !== 0 && (
+                <svg width="16" height="16" viewBox="0 0 16 16" alt="Right">
+                  <use href={spriteSvg + '#chevron-right'} />
+                </svg>
+              )}
             </Link>
           </li>
         ))}
