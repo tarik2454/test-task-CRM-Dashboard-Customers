@@ -17,10 +17,12 @@
 
 .customers {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   margin-bottom: 2.2rem;
 
   @include media(768) {
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4rem;

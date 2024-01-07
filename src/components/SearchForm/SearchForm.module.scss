@@ -1,6 +1,7 @@
 @import '@/styles/all-styles';
 
 .form {
+  display: flex;
   position: relative;
 
   @include media(768) {
