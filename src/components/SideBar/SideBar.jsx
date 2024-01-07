@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Logo from '../Logo/Logo';
 import NavBar from '../NavBar/NavBar';
 import User from '../User/User';
@@ -14,16 +14,20 @@ export default function SideBar() {
     setIsHidden(!isHidden);
   };
 
-  const closeSidebar = () => {
+  const closeSidebar = useCallback(() => {
+    const currentWidth = window.innerWidth;
+    if (currentWidth >= 1440) return;
+
     setIsHidden(true);
-  };
+  }, [setIsHidden]);
 
   useEffect(() => {
     const handleResize = () => {
-      setScreenWidth(window.innerWidth);
+      const currentWidth = window.innerWidth;
 
-      // Проверка при изменении размера экрана
-      if (window.innerWidth < 1440) {
+      setScreenWidth(currentWidth);
+
+      if (currentWidth < 1440) {
         setIsHidden(true);
       } else {
         setIsHidden(false);
@@ -35,13 +39,11 @@ export default function SideBar() {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [setIsHidden]);
 
   useEffect(() => {
     const handleOutsideClick = event => {
-      if (isHidden) {
-        return;
-      }
+      if (isHidden) return;
 
       const sidebarElement = document.querySelector(`.${styles.sidebar}`);
       if (
@@ -58,15 +60,21 @@ export default function SideBar() {
     return () => {
       window.removeEventListener('click', handleOutsideClick);
     };
-  }, [isHidden, screenWidth]);
+  }, [closeSidebar, isHidden, screenWidth]);
 
   useEffect(() => {
-    if (!isHidden) {
+    if (!isHidden && screenWidth < 1440) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'auto';
     }
-  }, [isHidden]);
+  }, [isHidden, screenWidth]);
+
+  useEffect(() => {
+    if (screenWidth < 1440) {
+      setIsHidden(true);
+    }
+  }, [screenWidth]);
 
   return (
     <>
@@ -83,7 +91,7 @@ export default function SideBar() {
 
         <div className={styles.sidebar__content}>
           <Logo />
-          <NavBar />
+          <NavBar closeSidebar={closeSidebar} />
         </div>
 
         <User />
