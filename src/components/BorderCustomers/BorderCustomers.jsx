@@ -3,15 +3,16 @@ import { useMediaQuery } from 'react-responsive';
 import customers from '@/data/customers';
 
 import styles from '../BorderCustomers/BorderCustomers.module.scss';
+import React from 'react';
 
 export default function BorderCustomers() {
   const isMobile = useMediaQuery({ query: '(max-width: 767.8px)' });
 
   return isMobile ? (
     <table className={styles.table}>
-      <tbody>
+      <tbody className={styles.table__itemMobile}>
         {customers.map((item, index) => (
-          <tr className={styles.table__itemMobile} key={index}>
+          <React.Fragment key={index}>
             <tr className={styles.table__lineMobile}>
               <td className={styles.table__headerMobile}>Customer Name</td>
               <td className={styles.table__headerMobile}>Company</td>
@@ -34,7 +35,7 @@ export default function BorderCustomers() {
                 {item.status}
               </td>
             </tr>
-          </tr>
+          </React.Fragment>
         ))}
       </tbody>
     </table>
