@@ -1,1 +1,0 @@
-{"version":3,"file":"Income-6fc4b5a6.js","sources":["../../src/pages/Income/Income.jsx"],"sourcesContent":["export default function Income() {\n  return <div>Income</div>;\n}\n"],"names":["Income","jsx"],"mappings":"wCAAA,SAAwBA,GAAS,CACxB,OAAAC,EAAA,IAAC,OAAI,SAAM,QAAA,CAAA,CACpB"}

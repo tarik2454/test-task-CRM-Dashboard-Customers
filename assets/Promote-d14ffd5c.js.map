@@ -1,0 +1,1 @@
+{"version":3,"file":"Promote-d14ffd5c.js","sources":["../../src/pages/Promote/Promote.jsx"],"sourcesContent":["export default function Promote() {\n  return <div>Promote</div>;\n}\n"],"names":["Promote","jsx"],"mappings":"wCAAA,SAAwBA,GAAU,CACzB,OAAAC,EAAA,IAAC,OAAI,SAAO,SAAA,CAAA,CACrB"}
