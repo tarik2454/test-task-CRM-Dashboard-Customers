@@ -1,0 +1,1 @@
+{"version":3,"file":"Product-201699f0.js","sources":["../../src/pages/Product/Product.jsx"],"sourcesContent":["export default function Product() {\n  return <div>Product</div>;\n}\n"],"names":["Product","jsx"],"mappings":"wCAAA,SAAwBA,GAAU,CACzB,OAAAC,EAAA,IAAC,OAAI,SAAO,SAAA,CAAA,CACrB"}

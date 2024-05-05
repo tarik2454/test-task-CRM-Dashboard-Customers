@@ -1,0 +1,1 @@
+{"version":3,"file":"Dashboard-1f948306.js","sources":["../../src/pages/Dashboard/Dashboard.jsx"],"sourcesContent":["export default function Dashboard() {\n  return <div>Dashboard</div>;\n}\n"],"names":["Dashboard","jsx"],"mappings":"wCAAA,SAAwBA,GAAY,CAC3B,OAAAC,EAAA,IAAC,OAAI,SAAS,WAAA,CAAA,CACvB"}

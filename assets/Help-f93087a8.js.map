@@ -1,1 +1,0 @@
-{"version":3,"file":"Help-f93087a8.js","sources":["../../src/pages/Help/Help.jsx"],"sourcesContent":["export default function Help() {\n  return <div>Help</div>;\n}\n"],"names":["Help","jsx"],"mappings":"wCAAA,SAAwBA,GAAO,CACtB,OAAAC,EAAA,IAAC,OAAI,SAAI,MAAA,CAAA,CAClB"}
