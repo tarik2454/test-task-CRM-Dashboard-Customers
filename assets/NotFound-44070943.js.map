@@ -1,1 +1,0 @@
-{"version":3,"file":"NotFound-44070943.js","sources":["../../src/pages/NotFound/NotFound.jsx"],"sourcesContent":["export default function NotFound() {\n  return <div>NotFound</div>;\n}\n"],"names":["NotFound","jsx"],"mappings":"wCAAA,SAAwBA,GAAW,CAC1B,OAAAC,EAAA,IAAC,OAAI,SAAQ,UAAA,CAAA,CACtB"}
