@@ -1,8 +1,43 @@
-# React + Vite
+# <div align="center">Oksana Openko sexologist</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="./public/readme/img-1.png" alt="Screenshot-1" >
 
-Currently, two official plugins are available:
+## Visit site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉&nbsp;<a href="https://test-task-crm-dashboard-customers.vercel.app/" target="_blank">Click
+here</a>
+
+## Technologies used
+
+- HTML
+- CSS(SCSS)
+- JavaScript
+- React
+- React Router DOM
+- Normalize.css
+- Vite
+
+## Run it locally
+
+clone the repository:
+
+```
+git clone https://github.com/tarik2454/test-task-CRM-Dashboard-Customers
+```
+
+set up dependencies:
+
+```
+npm install
+```
+
+run the application:
+
+```
+npm start
+```
+
+## My contacts
+
+- **<a href="https://t.me/tarik_2454" target="_blank">Telegram</a>**
+- **<a href="tarik2454@gmail.com" target="_blank">Email</a>**
