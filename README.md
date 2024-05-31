@@ -1,4 +1,4 @@
-# <div align="center">Oksana Openko sexologist</div>
+# <div align="center">CRM Dashboard Customers</div>
 
 <img src="./public/readme/img-1.png" alt="Screenshot-1" >
 
